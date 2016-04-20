@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!
+  before_action :admin_user
 
   def index
     @users = User.all
@@ -11,5 +12,15 @@ class UsersController < ApplicationController
       redirect_to :root, :alert => "Access denied"
     end
   end
+private
+  def admin?
+    current_user.admin
+  end
 
+  def admin_user
+    unless current_user.admin?
+      redirect_to root_path
+      flash[:error] = "Not authorized"
+    end
+  end
 end
