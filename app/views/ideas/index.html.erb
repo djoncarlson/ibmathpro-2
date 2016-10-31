@@ -1,13 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Ideas</h1>
-
-<table>
-  <thead>
+<h1>Ideas</h1>
+<% if current_user.admin? %>
+  <%= link_to 'New Idea', new_idea_path, class="btn" %>
+<% end %>
+<table class="table table-sm">
+  <thead class="thead-inverse">
     <tr>
       <th>Name</th>
       <th>Description</th>
-      <th>Level</th>
+      <th></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -26,5 +28,3 @@
 </table>
 
 <br>
-
-<%= link_to 'New Idea', new_idea_path %>

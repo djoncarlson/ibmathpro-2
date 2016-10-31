@@ -4,7 +4,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="tagline">IB Math Pro</h1>
+                <h1 class="tagline">My Math Project</h1>
+                <h2>coming soon...</h2>
+                <p>like really soon. even sooner than your IB topic deadline.</p>
             </div>
         </div>
     </div>
@@ -17,25 +19,22 @@
 
     <div class="row">
         <div class="col-sm-12">
-            <h3>Internal Assesment Ideas &amp; Support</h3>
-            <p>Like so many high school IB students, you need help generating a unique but feasible project idea for your math internal assessment. I've helped hundreds of students come up with great project ideas and I can help you today.</p>
-            <p></p>
+            <h3>Math Project Ideas &amp; Support</h3>
+            <p>Custom generated project ideas. We're launching in a few short days. Stay tuned!</p>
+            <% if false %>
+            <p>Custom generated project ideas for students and teachers. At My Math Project we help you create a unique and feasible project idea for your math class. From Internal Assessment projects for the IB to final projects for your stats class. You've come to the right place to get customized help.</p>
+            <p>Browse the <i>rough ideas</i> section to see some big picture topics for free.</p>
+            <p><i>Sign up</i> for an account to get personalized help generating an idea.</p>
+            <p><i>Email our team</i> if you need more in-depth help working through tough data analysis and math questions</p>
             <p>
-                <%= link_to "Sign Up Today", new_user_registration_path, class: "btn btn-default btn-lg"%>
+                <%= link_to "Sign Up Today", new_user_registration_path, class: "btn btn-default btn-lg centerit"%>
             </p>
+            <% end %>
         </div>
-    <!--    <div class="col-sm-4">
+    <div class="col-sm-4">
             <h2>Contact Us</h2>
             <address>
-                <strong>Start Bootstrap</strong>
-                <br>3481 Melrose Place
-                <br>Beverly Hills, CA 90210
-                <br>
-            </address>
-            <address>
-                <abbr title="Phone">P:</abbr>(123) 456-7890
-                <br>
-                <abbr title="Email">E:</abbr> <a href="mailto:#">name@example.com</a>
+                <abbr title="Email">E:</abbr> <a href="mailto:#">info@mymathproject.com</a>
             </address>
         </div>
     </div>
@@ -44,20 +43,21 @@
     <hr>
 
     <div class="row">
-        <div class="col-sm-4">
-            <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
-            <h2>Marketing Box #1</h2>
-            <p>These marketing boxes are a great place to put some information. These can contain summaries of what the company does, promotional information, or anything else that is relevant to the company. These will usually be below-the-fold.</p>
+      <h3></h3>
+        <div class="col-sm-4 centerit">
+            <img class="img-circle img-responsive img-center" src="/images/landing_page-chalk.png" alt="">
+            <h2>IB Math Studies</h2>
+            <p>Design a survey, analyze the data!</p>
         </div>
-        <div class="col-sm-4">
-            <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
-            <h2>Marketing Box #2</h2>
-            <p>The images are set to be circular and responsive. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+        <div class="col-sm-4 centerit">
+            <img class="img-circle img-responsive img-center" src="/images/landing_page-trees.png" alt="">
+            <h2>IB Math SL</h2>
+            <p>Look for connections from calculus and geometry!</p>
         </div>
-        <div class="col-sm-4">
-            <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
-            <h2>Marketing Box #3</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+        <div class="col-sm-4 centerit">
+            <img class="img-circle img-responsive img-center" src="/images/landing_page-vibrant.png" alt="">
+            <h2>IB Math HL</h2>
+            <p>Connect calculus, statistics and more!</p>
         </div>
     </div>
     <!-- /.row -->
@@ -68,7 +68,7 @@
     <footer>
         <div class="row">
             <div class="col-lg-12">
-                <p>Copyright &copy; Your Website 2014</p>
+              <p>My Math Projects is an independently run service and is not affiliated with the <a href="http://www.ibo.org">IBO</a></br>Copyright &copy; My Math Projects <%= Time.now.year %></p>
             </div>
         </div>
         <!-- /.row -->
